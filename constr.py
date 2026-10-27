@@ -57,15 +57,27 @@
 # d.sound()
 
 
+# from abc import ABC, abstractmethod
+# class Car(ABC):
+#     @abstractmethod
+#     def start(self):
+#         pass
+
+# class BMW(Car):
+#     def start(self):
+#         print("Car started")
+
+# c = BMW()
+# c.start()
+
+
 from abc import ABC, abstractmethod
-class Car(ABC):
+class Employee(ABC):
     @abstractmethod
-    def start(self):
+    def show_details(self):
         pass
-
-class BMW(Car):
-    def start(self):
-        print("Car started")
-
-c = BMW()
-c.start()
+class Staff(Employee):
+    def show_details(self):
+        print("Salary Slip: Generated")
+s = Staff()
+s.show_details()

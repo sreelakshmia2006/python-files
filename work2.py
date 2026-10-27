@@ -61,19 +61,50 @@
 
 
 
-nums = [3,4,-1,1]
-n = len(nums)
-for i in range(n):
-    while 1 <= nums[i] <= n and nums[nums[i]-1]!= nums[i]:
-        temp = nums[i]
-        nums[i] = nums[temp-1]
-        nums[temp-1] = temp
-for i in range(n):
-    if nums[i]!= i+1:
-        print(i+1)
+# nums = [3,4,-1,1]
+# n = len(nums)
+# for i in range(n):
+#     while 1 <= nums[i] <= n and nums[nums[i]-1]!= nums[i]:
+#         temp = nums[i]
+#         nums[i] = nums[temp-1]
+#         nums[temp-1] = temp
+        
+# for i in range(n):
+#     if nums[i]!= i+1:
+#         print(i+1)
+#         break
+# else:
+#     print(n+1) 
+
+
+
+import random
+name=input("enter your name:")
+
+secret_number = random.randint(1,20)
+
+print("Welcome",name,"!")
+print("I have selected a random number between 1 and 20.")
+print("Try to  guess it")
+
+attempts=0
+
+while attempts<6:
+    guess=int(input("enter your guess:"))
+    attempts+=1
+
+    if guess<=secret_number:
+        print("your guess is too low")
+    elif guess>=secret_number:
+        print("your guess is too high")
+    else:
+        print("congratulation",name,"!")
+        print("you guess the correct number in",attempts,"attempts")
         break
-else:
-    print(n+1)                                       
+if guess !=secret_number:
+    print("game over!")
+    print("The correct answer was:",secret_number)
+
                                                        
 
 
