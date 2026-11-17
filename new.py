@@ -32,10 +32,10 @@
 #     print(n)
 #     n=n+1
 
-name = ["sree","nandha","riya","swetha","neha"] 
-l=len(name)
-i=0
-while i <l :
-    print(name[i])
-    i=i+1
+# name = ["sree","nandha","riya","swetha","neha"] 
+# l=len(name)
+# i=0
+# while i <l :
+#     print(name[i])
+#     i=i+1
     

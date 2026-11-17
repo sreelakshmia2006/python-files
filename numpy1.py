@@ -136,94 +136,94 @@
 
 
 
-import numpy as np
-students = {
-    "Anu": {"Python": 75, "SQL": 82, "Excel": 68},
-    "Rahul": {"Python": 91, "SQL": 88, "Excel": 95},
-    "Priya": {"Python": 65, "SQL": 72, "Excel": 80}
-}
+# import numpy as np
+# students = {
+#     "Anu": {"Python": 75, "SQL": 82, "Excel": 68},
+#     "Rahul": {"Python": 91, "SQL": 88, "Excel": 95},
+#     "Priya": {"Python": 65, "SQL": 72, "Excel": 80}
+# }
 
-def display_all():
-    print("\n--- Display All Students ---")
-    for name, marks in students.items():
-        print(name, "->", marks)
+# def display_all():
+#     print("\n--- Display All Students ---")
+#     for name, marks in students.items():
+#         print(name, "->", marks)
 
-def search_student():
-    name = input("Enter student name to search: ")
-    if name in students:
-        print(name, "found:", students[name])
-    else:
-        print("Student", name, "not found!")
+# def search_student():
+#     name = input("Enter student name to search: ")
+#     if name in students:
+#         print(name, "found:", students[name])
+#     else:
+#         print("Student", name, "not found!")
 
-def total_average():
-    print("\n--- Total and Average ---")
-    for name, marks in students.items():
-        total = sum(marks.values())
-        avg = total / 3
-        print(name, "-> Total:", total, "Average:", round(avg, 2))
+# def total_average():
+#     print("\n--- Total and Average ---")
+#     for name, marks in students.items():
+#         total = sum(marks.values())
+#         avg = total / 3
+#         print(name, "-> Total:", total, "Average:", round(avg, 2))
 
-def find_topper():
-    print("\n--- Find Topper ---")
-    topper = max(students, key=lambda n: sum(students[n].values()))
-    total = sum(students[topper].values())
-    print("Topper is", topper, "with Total", total)
+# def find_topper():
+#     print("\n--- Find Topper ---")
+#     topper = max(students, key=lambda n: sum(students[n].values()))
+#     total = sum(students[topper].values())
+#     print("Topper is", topper, "with Total", total)
 
-def update_marks():
-    name = input("Enter student name: ")
-    if name in students:
-        subject = input("Enter subject (Python/SQL/Excel): ")
-        if subject in students[name]:
-            new_mark = int(input("Enter new mark: "))
-            students[name][subject] = new_mark
-            print("Updated!")
-        else:
-            print("Invalid subject!")
-    else:
-        print("Student not found!")
+# def update_marks():
+#     name = input("Enter student name: ")
+#     if name in students:
+#         subject = input("Enter subject (Python/SQL/Excel): ")
+#         if subject in students[name]:
+#             new_mark = int(input("Enter new mark: "))
+#             students[name][subject] = new_mark
+#             print("Updated!")
+#         else:
+#             print("Invalid subject!")
+#     else:
+#         print("Student not found!")
 
-def add_new_student():
-    name = input("Enter new student name: ")
-    py = int(input("Enter Python mark: "))
-    sql = int(input("Enter SQL mark: "))
-    excel = int(input("Enter Excel mark: "))
-    students[name] = {"Python": py, "SQL": sql, "Excel": excel}
-    print("Student", name, "added!")
+# def add_new_student():
+#     name = input("Enter new student name: ")
+#     py = int(input("Enter Python mark: "))
+#     sql = int(input("Enter SQL mark: "))
+#     excel = int(input("Enter Excel mark: "))
+#     students[name] = {"Python": py, "SQL": sql, "Excel": excel}
+#     print("Student", name, "added!")
 
-def subject_wise_topper():
-    print("\n--- Subject-wise Topper ---")
-    for subject in ["Python", "SQL", "Excel"]:
-        topper = max(students, key=lambda n: students[n][subject])
-        print(subject, "Topper:", topper, students[topper][subject])
+# def subject_wise_topper():
+#     print("\n--- Subject-wise Topper ---")
+#     for subject in ["Python", "SQL", "Excel"]:
+#         topper = max(students, key=lambda n: students[n][subject])
+#         print(subject, "Topper:", topper, students[topper][subject])
 
-while True:
-    print("1. Display All")
-    print("2. Search Student")
-    print("3. Total and Average")
-    print("4. Find Topper")
-    print("5. Update Marks")
-    print("6. Add New Student")
-    print("7. Subject-wise Topper")
-    print("8. Exit")
-    choice = input("Enter choice (1-8): ")
-    if choice == "1":
-        display_all()
-    elif choice == "2":
-        search_student()
-    elif choice == "3":
-        total_average()
-    elif choice == "4":
-        find_topper()
-    elif choice == "5":
-        update_marks()
-    elif choice == "6":
-        add_new_student()
-    elif choice == "7":
-        subject_wise_topper()
-    elif choice == "8":
-        print("Exiting. Thank you!")
-        break
-    else:
-        print("Invalid choice!")
+# while True:
+#     print("1. Display All")
+#     print("2. Search Student")
+#     print("3. Total and Average")
+#     print("4. Find Topper")
+#     print("5. Update Marks")
+#     print("6. Add New Student")
+#     print("7. Subject-wise Topper")
+#     print("8. Exit")
+#     choice = input("Enter choice (1-8): ")
+#     if choice == "1":
+#         display_all()
+#     elif choice == "2":
+#         search_student()
+#     elif choice == "3":
+#         total_average()
+    # elif choice == "4":
+    #     find_topper()
+    # elif choice == "5":
+    #     update_marks()
+    # elif choice == "6":
+    #     add_new_student()
+    # elif choice == "7":
+    #     subject_wise_topper()
+    # elif choice == "8":
+    #     print("Exiting. Thank you!")
+    #     break
+    # else:
+        # print("Invalid choice!")
 
 
 

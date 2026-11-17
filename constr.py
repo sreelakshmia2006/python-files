@@ -71,13 +71,13 @@
 # c.start()
 
 
-from abc import ABC, abstractmethod
-class Employee(ABC):
-    @abstractmethod
-    def show_details(self):
-        pass
-class Staff(Employee):
-    def show_details(self):
-        print("Salary Slip: Generated")
-s = Staff()
-s.show_details()
+# from abc import ABC, abstractmethod
+# class Employee(ABC):
+#     @abstractmethod
+#     def show_details(self):
+#         pass
+# class Staff(Employee):
+#     def show_details(self):
+#         print("Salary Slip: Generated")
+# s = Staff()
+# s.show_details()

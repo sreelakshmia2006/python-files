@@ -41,15 +41,15 @@
 
 
 
-litre = float(input("enter the amount of water used:"))
-if litre <= 100:
-    amount = litre*5
-elif litre <= 200:
-    amount = (100*5)+((litre-100)*10)
-else:
-    amount = (100*5)+(100*10)+((litre-200)*20)
-print("Litres used:", litre)
-print("Total amount:", amount)
+# litre = float(input("enter the amount of water used:"))
+# if litre <= 100:
+#     amount = litre*5
+# elif litre <= 200:
+#     amount = (100*5)+((litre-100)*10)
+# else:
+#     amount = (100*5)+(100*10)+((litre-200)*20)
+# print("Litres used:", litre)
+# print("Total amount:", amount)
 
 
 

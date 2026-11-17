@@ -78,32 +78,32 @@
 
 
 
-import random
-name=input("enter your name:")
+# import random
+# name=input("enter your name:")
 
-secret_number = random.randint(1,20)
+# secret_number = random.randint(1,20)
 
-print("Welcome",name,"!")
-print("I have selected a random number between 1 and 20.")
-print("Try to  guess it")
+# print("Welcome",name,"!")
+# print("I have selected a random number between 1 and 20.")
+# print("Try to  guess it")
 
-attempts=0
+# attempts=0
 
-while attempts<6:
-    guess=int(input("enter your guess:"))
-    attempts+=1
+# while attempts<6:
+#     guess=int(input("enter your guess:"))
+#     attempts+=1
 
-    if guess<=secret_number:
-        print("your guess is too low")
-    elif guess>=secret_number:
-        print("your guess is too high")
-    else:
-        print("congratulation",name,"!")
-        print("you guess the correct number in",attempts,"attempts")
-        break
-if guess !=secret_number:
-    print("game over!")
-    print("The correct answer was:",secret_number)
+#     if guess<=secret_number:
+#         print("your guess is too low")
+#     elif guess>=secret_number:
+#         print("your guess is too high")
+#     else:
+#         print("congratulation",name,"!")
+#         print("you guess the correct number in",attempts,"attempts")
+#         break
+# if guess !=secret_number:
+#     print("game over!")
+#     print("The correct answer was:",secret_number)
 
                                                        
 

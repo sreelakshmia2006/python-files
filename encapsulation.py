@@ -48,7 +48,7 @@
 
 
 
-# for i in range(1,6):
+# for i in range(1,6):                                    #pattern
 #     a=i
 #     for j in range(1,i+1):
 #         print(a,end=" ")
@@ -56,12 +56,12 @@
 #     print()
 
 
-l=[]
-num=int(input("how many numbers want?"))
-for i in range(num):
-    number=int(input(f"enter your {i+1} number : "))
-    l.append(number)
-print(l)
+# l=[]                              
+# num=int(input("how many numbers want?"))
+# for i in range(num):
+#     number=int(input(f"enter your {i+1} number : "))
+#     l.append(number)
+# print(l)
 
 
     

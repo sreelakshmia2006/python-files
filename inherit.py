@@ -55,20 +55,20 @@
 
 
 
-class Person:
-    def work(self):
-        print("Working")
-class Student(Person):
-    def study(Person):
-        print("Studying")
-class Employee(Person):
-    def earn(self):
-        print("Earning")
+# class Person:
+#     def work(self):
+#         print("Working")
+# class Student(Person):
+#     def study(Person):
+#         print("Studying")
+# class Employee(Person):
+#     def earn(self):
+#         print("Earning")
 
-class Intern(Student, Employee):
-    pass
+# class Intern(Student, Employee):
+#     pass
 
-i= Intern()
-i.work()
-i.study()
-i.earn()
+# i= Intern()
+# i.work()
+# i.study()
+# i.earn()

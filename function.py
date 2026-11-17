@@ -28,10 +28,10 @@
 
 
 
-def addition():
-    num1=int(input("enter your first number :"))
-    num2=int(input("enter your second number :"))
-    return (num1+num2)                                      #without argument with return
+# def addition():
+#     num1=int(input("enter your first number :"))
+#     num2=int(input("enter your second number :"))
+#     return (num1+num2)                                      #without argument with return
 
-answer=addition()
-print(answer)
+# answer=addition()
+# print(answer)

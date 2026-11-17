@@ -1,0 +1,16 @@
+Student_ID,Student,Department,Marks,Attendance,Fees,City
+101,Anu,Python,85,92.0,15000.0,Kottayam
+102,Binu,Python,72,85.0,15000.0,Kochi
+103,Ciya,Data Analytics,91,96.0,18000.0,Thrissur
+104,David,Python,65,70.0,15000.0,Kottayam
+105,Eva,Data Analytics,88,90.0,18000.0,Kochi
+106,Farhan,Python,42,60.0,15000.0,Pala
+107,Gita,Data Analytics,78,82.0,18000.0,Thrissur
+108,Hari,Python,95,98.0,15000.0,Kottayam
+109,Isha,Data Analytics,55,65.0,18000.0,Kochi
+110,John,Python,82,88.0,15000.0,Pala
+111,Kiran,MERN,69,76.0,20000.0,Ernakulam
+112,Lakshmi,MERN,94,93.0,20000.0,Kottayam
+113,Manu,Data Analytics,73,,18000.0,Pala
+114,Nisha,MERN,86,89.0,,Kochi
+115,Omar,Python,48,58.0,15000.0,Thrissur
